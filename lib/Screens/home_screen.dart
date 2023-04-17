@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui/Screens/call_screen.dart';
+import 'package:whatsapp_ui/Screens/chat_screen.dart';
+import 'package:whatsapp_ui/Screens/status_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -55,7 +58,11 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         body: const TabBarView(
-          children: [],
+          children: [
+            ChatScreen(),
+            StatusScreen(),
+            CallScreen(),
+          ],
         ),
       ),
     );

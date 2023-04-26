@@ -17,6 +17,7 @@ class ChatScreen extends StatelessWidget {
             ),
             title: Text('Usaid Asif'),
             subtitle: Text('Hey! I am using WhatsApp'),
+            trailing: Text('12:00'),
           );
         },
       ),

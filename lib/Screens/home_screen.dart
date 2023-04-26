@@ -30,6 +30,12 @@ class _HomeScreenState extends State<HomeScreen> {
             IconButton(
               onPressed: () {},
               icon: const Icon(
+                Icons.camera_alt,
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(
                 Icons.search,
               ),
             ),

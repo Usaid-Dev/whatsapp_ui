@@ -9,7 +9,10 @@ class CallScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: const Color(0xFF008069),
-        child: const Icon(Icons.add_ic_call),
+        child: const Icon(
+          Icons.add_ic_call,
+          color: Colors.white,
+        ),
       ),
       body: Column(
         children: [
@@ -32,7 +35,7 @@ class CallScreen extends StatelessWidget {
             ),
           ),
           ListView.builder(
-            itemCount: 8,
+            itemCount: 7,
             shrinkWrap: true,
             itemBuilder: (context, index) {
               return const ListTile(

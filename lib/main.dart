@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui/provider/theme_provider.dart';
 
 import 'Screens/splash_screen.dart';
 
@@ -11,10 +12,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.system,
+      theme: MyThemes.lightTheme,
+      darkTheme: MyThemes.darkTheme,
       title: 'WhatsApp Ui',
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }

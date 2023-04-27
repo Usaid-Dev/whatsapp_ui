@@ -27,7 +27,7 @@ class StatusScreen extends StatelessWidget {
             ),
           ),
           ListView.builder(
-            itemCount: 6,
+            itemCount: 5,
             shrinkWrap: true,
             itemBuilder: (context, index) {
               return const ListTile(
@@ -60,7 +60,10 @@ class StatusScreen extends StatelessWidget {
                   FloatingActionButton(
                     onPressed: () {},
                     backgroundColor: const Color(0xFF008069),
-                    child: const Icon(Icons.edit),
+                    child: const Icon(
+                      Icons.edit,
+                      color: Colors.white,
+                    ),
                   ),
                   const SizedBox(
                     height: 20,
@@ -68,7 +71,10 @@ class StatusScreen extends StatelessWidget {
                   FloatingActionButton(
                     onPressed: () {},
                     backgroundColor: const Color(0xFF008069),
-                    child: const Icon(Icons.camera_alt),
+                    child: const Icon(
+                      Icons.camera_alt,
+                      color: Colors.white,
+                    ),
                   ),
                 ],
               ),

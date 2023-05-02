@@ -34,23 +34,25 @@ class CallScreen extends StatelessWidget {
               child: Text('Recent'),
             ),
           ),
-          ListView.builder(
-            itemCount: 7,
-            shrinkWrap: true,
-            itemBuilder: (context, index) {
-              return const ListTile(
-                leading: CircleAvatar(
-                  radius: 24,
-                  backgroundImage: AssetImage('assets/Mypic.png'),
-                ),
-                title: Text('Usaid Asif'),
-                subtitle: Text('Yesterday, 10:30 AM'),
-                trailing: Icon(
-                  Icons.call,
-                  color: Color(0xFF008069),
-                ),
-              );
-            },
+          Expanded(
+            child: ListView.builder(
+              itemCount: 15,
+              shrinkWrap: true,
+              itemBuilder: (context, index) {
+                return const ListTile(
+                  leading: CircleAvatar(
+                    radius: 24,
+                    backgroundImage: AssetImage('assets/Mypic.png'),
+                  ),
+                  title: Text('Usaid Asif'),
+                  subtitle: Text('Yesterday, 10:30 AM'),
+                  trailing: Icon(
+                    Icons.call,
+                    color: Color(0xFF008069),
+                  ),
+                );
+              },
+            ),
           )
         ],
       ),

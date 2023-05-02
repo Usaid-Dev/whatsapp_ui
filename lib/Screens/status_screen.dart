@@ -26,19 +26,24 @@ class StatusScreen extends StatelessWidget {
               child: Text('Viewed updates'),
             ),
           ),
-          ListView.builder(
-            itemCount: 5,
-            shrinkWrap: true,
-            itemBuilder: (context, index) {
-              return const ListTile(
-                leading: CircleAvatar(
-                  radius: 24,
-                  backgroundImage: AssetImage('assets/Mypic.png'),
-                ),
-                title: Text('Usaid Asif'),
-                subtitle: Text('Today, 12:30 PM'),
-              );
-            },
+          Expanded(
+            child: ListView.builder(
+              itemCount: 15,
+              shrinkWrap: true,
+              itemBuilder: (context, index) {
+                return const ListTile(
+                  leading: CircleAvatar(
+                    radius: 24,
+                    backgroundImage: AssetImage('assets/Mypic.png'),
+                  ),
+                  title: Text('Usaid Asif'),
+                  subtitle: Text('Today, 12:30 PM'),
+                );
+              },
+            ),
+          ),
+          const SizedBox(
+            height: 15,
           ),
           RichText(
             text: const TextSpan(
